@@ -83,7 +83,7 @@ export default function UserInfo() {
                       cover={
                         <img
                           alt="example"
-                          src="https://up.enterdesk.com/edpic/f9/50/b0/f950b0aa078f3a0be7ba87f46a43705a.jpg"
+                          src=""
                         />
                       }
                     >

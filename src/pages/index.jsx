@@ -1,55 +1,27 @@
 import React, { useEffect } from "react";
 import { Button, Input, Avatar, Row, Col } from "antd";
 import { UserOutlined } from "@ant-design/icons";
-// 阿里官方封装好hooks插件, 这里用到了其中的一个hooks, 快速开发
 import { useReactive } from "ahooks";
 
-import bg1 from "./../assets/img/bg.png";
-import bg2 from "./../assets/img/bg2.png";
-import ban41 from "./../assets/img/ban4-i1.jpg";
-import ban42 from "./../assets/img/ban4-i2.jpg";
+import bg1 from "./../assets/img/2block.png";
+import bg2 from "./../assets/img/2block.png";
+import ban41 from "./../assets/img/index_pic3.jpg";
+import ban42 from "./../assets/img/index_pic5.jpg";
 
-// 引入等装好的fetch方法  get和post
 import { get, post } from "./../fetch";
-
 export default function Index() {
-  //   这里是定义字段来接受接口返回的参数
-  const state = useReactive({
-    act: 0,
-
-    data: {},
-  });
-  // 这里是调用接口示例,
-  const getdata = (params) => {
-    get("http://poetry.apiopen.top/poetryFull", { count: 2, page: 1 }).then((res) => {
-      console.log("res -> :", res);
-    });
-    get("http://poetry.apiopen.top/getTime").then((res) => {
-      console.log("res -> :", res);
-      //   拿到数据后赋值给state
-      state.data = res.result;
-    });
-  };
-
-  //   进入页面调用请求数据方法
-  useEffect(() => {
-    getdata();
-  }, []);
-
   return (
     <div className="index-wrap">
-      {/* <p>使用示例 {state.data.date}</p> */}
-
+      <div className="index-banner">
       <div className="index-banner banner-card bg-center">
         <div>
-          <h1>Your Personal Doctor, Online</h1>
+          <h1>值得您绝对信任的线上医疗解决方案</h1>
           <p>
-            Partnering you with a doctor who really gets to know you, listens to you, and has time for you. Aligned with
-            your life.
+            通过区块链技术带来医疗数字身份、医药电商、医疗记录的全新变革，为您提供全新的数字化医疗体验，让您足不出户也能享受值得信任的医疗体系
           </p>
           <p>
-            <Button type="primary" block danger style={{ fontSize: "18px", height: "36px" }}>
-              And Get Matched Now
+            <Button type="primary" block style={{ fontSize: "18px", height: "36px" }}>
+              开始医疗之旅
             </Button>
           </p>
         </div>
@@ -57,25 +29,27 @@ export default function Index() {
           <img src={bg1} alt="" width="855" height="619" />
         </div>
       </div>
+
+    </div>
       <div className="index-banner2">
         <div className="banner-card bg-center">
           <div>
-            <img src={bg2} alt="" width="487" height="650" />
+            <img src={bg2} alt="" width="855" height="650" />
           </div>
           <div className="white-font">
-            <h1 className="white-font">A Doctor who “Gets You”</h1>
-            <p>Your SteadyMD doctor is perfectly aligned with your life, passions, and goals.</p>
+            <h1 className="white-font">采用区块链存证、溯源技术</h1>
+            <p>将互联网医疗传统的信任薄弱环节打通，为您提供如传统医疗般放心的医疗体验</p>
           </div>
         </div>
       </div>
       <div className="index-banner3">
         <div className="index-ban3 bg-center">
           <div>
-            <h1>Take the Quiz</h1>
-            <p>Tell us about yourself and we’ll pair you with the perfect doctor.</p>
+            <h1>建立你的身份</h1>
+            <p>在Fisco bcos医疗联盟链上建立陪伴您一生的数字身份</p>
             <p>
-              <Button type="primary" danger style={{ fontSize: "18px", height: "46px" }}>
-                Get Matched Now
+              <Button type="primary" style={{ fontSize: "18px", height: "46px" }}>
+                注册开始
               </Button>
             </p>
           </div>
@@ -84,8 +58,8 @@ export default function Index() {
       <div className="index-banner4">
         <div className="index-ban4 bg-center">
           <div className="tit">
-            <h1>Our Members Love Us</h1>
-            <p>Here’s what they have to say</p>
+            <h1>这些是你可以得到的服务</h1>
+            <p>线上医疗、医药电商和健康数字身份</p>
           </div>
           <div className="imgs">
             <img src={ban41} alt="" />
@@ -95,38 +69,35 @@ export default function Index() {
           <div className="infos">
             <div>
               <div className="info">
-                “SteadyMD allows you to avoid the copays &amp; inconvenience of going to your doctor’s or pediatrician’s
-                office–I can’t recommend it enough!”
+                采用实时视频技术，并辅以文字聊天系统，由经链上医师身份认证的专业医生全方位地为您进行医护检查，并将结果返回于您
               </div>
               <br />
               <div>
-                <Avatar size={60} icon={<UserOutlined />} />
+                <Avatar size={60} icon={<UserOutlined />} src={bg1}/>
                 &nbsp; &nbsp;
-                <span>Stephanie, SteadyMD Member</span>
+                <span>线上医疗</span>
               </div>
             </div>
             <div>
               <div className="info">
-                “SteadyMD allows you to avoid the copays &amp; inconvenience of going to your doctor’s or pediatrician’s
-                office–I can’t recommend it enough!”
+                采用链上药单、药品溯源、LBS最优调度的方法，提供放心可靠的医药（处方药）配送服务，快而安全地送达您手中
               </div>
               <br />
               <div>
-                <Avatar size={60} icon={<UserOutlined />} />
+                <Avatar size={60} icon={<UserOutlined />} src={bg1}/>
                 &nbsp; &nbsp;
-                <span>Stephanie, SteadyMD Member</span>
+                <span>医药电商</span>
               </div>
             </div>
             <div>
               <div className="info">
-                “SteadyMD allows you to avoid the copays &amp; inconvenience of going to your doctor’s or pediatrician’s
-                office–I can’t recommend it enough!”
+                建立全面的数字健康身份，通过病历存证的方式，为您提供一生健康的记录保障与身份认证
               </div>
               <br />
               <div>
-                <Avatar size={60} icon={<UserOutlined />} />
+                <Avatar size={60} icon={<UserOutlined />} src={bg1}/>
                 &nbsp; &nbsp;
-                <span>Stephanie, SteadyMD Member</span>
+                <span>健康身份</span>
               </div>
             </div>
           </div>
@@ -136,55 +107,34 @@ export default function Index() {
           <br />
           <div className="colors">
             <div>
-              <h1>Great for Anyone, Anywhere in the United States.</h1>
+              <h1>任何在职/非在职医生、各类患者、各类药店和医疗机构都可以接入我们的网络</h1>
               <p>
                 <Button type="primary" danger style={{ fontSize: "18px", height: "60px" }}>
-                  Learn More: What is SteadyMD Primary Care?
+                  了解更多: Mediphor是怎么通过区块链技术为您提供信任帮助的呢？
                 </Button>
               </p>
             </div>
           </div>
           <div className="imgs-wrap">
-            <div>
+          <div>
               <img
-                width="396"
-                height="72"
-                src="https://www.steadymd.com/wp-content/uploads/2020/04/whole-30@3x.png"
+                width="400"
+                height="75"
+                src={bg1}
               ></img>
             </div>
             <div>
               <img
                 width="400"
                 height="75"
-                src="https://www.steadymd.com/wp-content/uploads/2020/04/cnbc-logo-homepage-wide-2021-grey.png"
+                src={bg1}
               ></img>
             </div>
             <div>
               <img
                 width="400"
                 height="75"
-                src="https://www.steadymd.com/wp-content/uploads/2021/01/forbes-logo-2021-grey.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                width="400"
-                height="75"
-                src="https://www.steadymd.com/wp-content/uploads/2020/04/menshealth-logo-2021-grey.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                width="400"
-                height="75"
-                src="https://www.steadymd.com/wp-content/uploads/2020/04/Wellness_mama_logo_2021-grey.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                width="400"
-                height="75"
-                src="https://www.steadymd.com/wp-content/uploads/2021/01/inc-logo-2021-grey.png"
+                src={bg1}
               ></img>
             </div>
           </div>
@@ -194,7 +144,7 @@ export default function Index() {
         <div className="footer-center bg-center">
           <Row gutter={20}>
             <Col span={6} className="bar">
-              <p>SteadyMD</p>
+              <p>Mediphor</p>
               <ul>
                 <li>About Us</li>
                 <li>About Us</li>
@@ -204,7 +154,7 @@ export default function Index() {
               </ul>
             </Col>
             <Col span={6} className="bar">
-              <p>SteadyMD</p>
+              <p>Mediphor</p>
               <ul>
                 <li>About Us</li>
                 <li>About Us</li>
@@ -214,7 +164,7 @@ export default function Index() {
               </ul>
             </Col>
             <Col span={6} className="bar">
-              <p>SteadyMD</p>
+              <p>Mediphor</p>
               <ul>
                 <li>About Us</li>
                 <li>About Us</li>
@@ -224,7 +174,7 @@ export default function Index() {
               </ul>
             </Col>
             <Col span={6} className="bar">
-              <p>SteadyMD</p>
+              <p>Mediphor</p>
               <ul>
                 <li>About Us</li>
                 <li>About Us</li>

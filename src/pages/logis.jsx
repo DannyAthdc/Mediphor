@@ -11,7 +11,7 @@ export default function Logis() {
         <div className="logis-ban1 bg-center">
           <div className="info">
             <img src="" alt="" />
-            <p>sdasdasd</p>
+            <p>新一</p>
           </div>
         </div>
       </div>
@@ -41,11 +41,11 @@ export default function Logis() {
           <Col span={18} className="line-cards">
             <div className="arrow-wrap">
               <Card bodyStyle={{ padding: 4 }} style={{ width: "220px" }}>
-                <p className="text">名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa</p>
+                <p className="text">第一种处方药</p>
                 <p>
-                名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa
+                由上海药局发出
                 </p>
-                <p>时间 日期文本日期文本日期文本日期文本日期文本日期文本</p>
+                <p>2021/8/31</p>
               </Card>
               <div className="line">
                 <div></div>
@@ -54,11 +54,11 @@ export default function Logis() {
             </div>
             <div className="arrow-wrap">
               <Card bodyStyle={{ padding: 4 }} style={{ width: "220px" }}>
-                <p className="text">名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa</p>
+                <p className="text">第一种处方药</p>
                 <p>
-                名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa
+                由浦东药店签收
                 </p>
-                <p>时间 日期文本日期文本日期文本日期文本日期文本日期文本</p>
+                <p>2021/9/1</p>
               </Card>
               <div className="line">
                 <div></div>
@@ -67,11 +67,11 @@ export default function Logis() {
             </div>
             <div className="arrow-wrap">
               <Card bodyStyle={{ padding: 4 }} style={{ width: "220px" }}>
-                <p className="text">名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa</p>
+                <p className="text">第一种处方药</p>
                 <p>
-                名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa
+                由浦东药店运出
                 </p>
-                <p>时间 日期文本日期文本日期文本日期文本日期文本日期文本</p>
+                <p>2021/9/5</p>
               </Card>
               <div className="line">
                 <div></div>
@@ -80,11 +80,11 @@ export default function Logis() {
             </div>
             <div className="arrow-wrap">
               <Card bodyStyle={{ padding: 4 }} style={{ width: "220px" }}>
-                <p className="text">名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa</p>
+                <p className="text">第一种处方药</p>
                 <p>
-                名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa
+                由龙寓签收
                 </p>
-                <p>时间 日期文本日期文本日期文本日期文本日期文本日期文本</p>
+                <p>2021/9/8</p>
               </Card>
               <div className="line">
                 <div></div>
@@ -93,11 +93,11 @@ export default function Logis() {
             </div>
             <div className="arrow-wrap">
               <Card bodyStyle={{ padding: 4 }} style={{ width: "220px" }}>
-                <p className="text">名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa</p>
+                <p className="text">第一种处方药</p>
                 <p>
-                名称介绍文本aaaaaaaaaaaaaaaaa名称介绍文本aaaaaaaaaaaaaaaaa
+                由患者签收
                 </p>
-                <p>时间 日期文本日期文本日期文本日期文本日期文本日期文本</p>
+                <p>2021/9/9</p>
               </Card>
             </div>
           </Col>

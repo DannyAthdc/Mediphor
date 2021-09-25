@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 .top-header {
-  background: #fff;
+  background: #FFFEF0;
   border-bottom: 1px solid #f0f0f0;
 }
 .top-header .center {
@@ -28,8 +28,16 @@ body {
   display: flex;
   align-items: center;
 }
+.top-header .center .nav .my-menu {
+  background: #FFFEF0;
+}
 .top-header .center .nav .my-menu li {
   margin: 0 40px;
+}
+.top-header .center .nav .ant-btn {
+  background: #0A103C;
+  color: #fff;
+  border: transparent;
 }
 .footer {
   color: #d5d5d5 !important;
@@ -67,7 +75,12 @@ body {
   align-items: center;
 }
 .index-wrap .index-banner2 {
-  background: #26aebc !important;
+  background: #0A103C !important;
+}
+.index-wrap .ant-btn {
+  background: #0A103C;
+  color: #fff;
+  border: transparent;
 }
 .index-wrap .white-font {
   color: #fff;
@@ -154,7 +167,7 @@ body {
   font-weight: 800;
 }
 .check-wrap .check-banner1 .check-ban1 .btns .ant-btn {
-  border-color: #5921cf;
+  border-color: #0A103C;
   background: #fbf4ee;
   color: #404040;
 }
@@ -162,13 +175,13 @@ body {
   position: relative;
 }
 .check-wrap .check-banner1 .check-ban2 .swiper-wrapper .swiper-slide {
-  border: 4px solid #5921cf;
+  border: 4px solid #0A103C;
   width: 304px;
   height: 266px;
   cursor: pointer;
 }
 .check-wrap .check-banner1 .check-ban2 .swiper-wrapper .swiper-slide.active {
-  border: 4px solid #ac90e7;
+  border: 4px solid #1D34BB;
 }
 .check-wrap .check-banner1 .check-ban3 {
   margin-top: 40px;
@@ -187,7 +200,7 @@ body {
   width: 33%;
 }
 .check-wrap .check-banner1 .check-ban3 div ul li span {
-  color: #5921cf;
+  color: #0A103C;
   font-size: 20px;
   margin-right: 10px;
   font-weight: 600;
@@ -201,8 +214,8 @@ body {
   align-items: center;
 }
 .check-wrap .item .its .ant-btn {
-  border-color: #5921cf;
-  background: #5921cf;
+  border-color: #0A103C;
+  background: #0A103C;
   color: #edd1ba;
   height: 34px;
   padding: 0 24px;
@@ -224,14 +237,14 @@ body {
   margin: 6px 0;
 }
 .check-wrap .item .lcor {
-  color: #5921cf;
+  color: #0A103C;
 }
 .check-wrap .sww-btns {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   font-size: 14px;
-  background: #5921cf;
+  background: #0A103C;
   color: #fff;
 }
 .check-wrap .sww-btns::after {

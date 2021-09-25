@@ -30,12 +30,12 @@ export default function Check() {
     <div className="check-wrap">
       <div className="check-banner1 ">
         <div className="check-ban1 bg-center">
-          <div className="">{arr.length} 个供应商可用</div>
+          <div className="">{arr.length} 个医生可供选择</div>
           <br />
-          <h2 className="">远程医疗访问</h2>
+          <h2 className="">线上医疗挂号区</h2>
           <br />
           <div className="">
-            在几分钟内就可以看到医生，在德克萨斯州的患者中，与高质量的医生和临床医生一起进行负担得起、简单且方便的远程医疗访问。不需要保险。
+            点击选择医生并在几分钟之内获得医疗服务，请选择时间，点击滑动以选择您心仪的医生，以及记得打开您的摄像头和麦克风权限
           </div>
           <br />
           <div className="btns">
@@ -43,7 +43,7 @@ export default function Check() {
             &nbsp; &nbsp;
             <Button>明天</Button>
             &nbsp; &nbsp;
-            <Button>未来 3 天</Button>
+            <Button>未来一周</Button>
           </div>
         </div>
 
@@ -51,23 +51,23 @@ export default function Check() {
           <div className="swiper-container">
             <div className="swiper-wrapper">
               {arr.map((it, index) => (
-                <div className={`swiper-slide ${index == 1 ? "active" : ""}`} key={it}>
+                <div className={`swiper-slide ${index == 0 ? "active" : ""}`} key={it}>
                   <Card className="item">
                     <div className="its tinfo">
                       <div>
-                        <p style={{ fontSize: "16px", fontWeight: 800 }}>Shola Akinfiresoye，（DNP，FNP-BC）</p>
-                        <p>家庭医学</p>
-                        <p>通过和响应通过和响应通过和响应通过和响应通过和响应通过和响应通过和响应通过和响应</p>
+                        <p style={{ fontSize: "16px", fontWeight: 800 }}>A医生</p>
+                        <p>内科</p>
+                        <p>擅长内科</p>
                         <p>
-                          <Tag color="orange">今天有售</Tag>
+                          <Tag color="orange">17:00-19:00</Tag>
                           &nbsp; &nbsp;
-                          <Tag color="green">5 美元医药费</Tag>
+                          <Tag color="green">30元</Tag>
                         </p>
                       </div>
                       <div>
                         <Avatar
                           size={64}
-                          src="https://sesamecare.imgix.net/profile/dc49beea-724a-4c8f-a2fd-279f76fe83e8_1613759760.jpg?fit=facearea&faceIndex=1&facePad=3&format=auto&fm=webp&h=64"
+                          src=""
                         ></Avatar>
                       </div>
                     </div>
@@ -91,31 +91,31 @@ export default function Check() {
         </div>
 
         <div className="check-ban3 bg-center">
-          <p>以下包含和排除适用：</p>
+          <p>可以获取的服务：</p>
           <div>
             <ul>
               <li>
-                <span>√</span>处方，如果推荐
+                <span>√</span>处方药
               </li>
               <li>
-                <span>√</span>转诊给专家
+                <span>√</span>转诊
               </li>
             </ul>
             <ul>
               <li>
-                <span>×</span>受控物质处方
+                <span>√</span>线下体检
               </li>
               <li>
-                <span>×</span>诊断测试（链球菌、流感、电晕）
+                <span>√</span>诊断测试
               </li>
               <li>
-                <span>×</span>免疫接种
+                <span>×</span>疫苗接种
               </li>
               <li>
-                <span>×</span>实验室测试
+                <span>√</span>长期关乎
               </li>
               <li>
-                <span>×</span>工人补偿文件
+                <span>√</span>智能服务
               </li>
             </ul>
           </div>
